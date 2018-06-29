@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/new/log">
+        <file>log/circle.png</file>
+        <file>log/cut.png</file>
+        <file>log/free.png</file>
+        <file>log/logo.jpg</file>
+        <file>log/open.png</file>
+        <file>log/retangle.png</file>
+        <file>log/setup.png</file>
+        <file>log/start.png</file>
+        <file>log/stop.png</file>
+        <file>log/connect.png</file>
+        <file>log/deccut.png</file>
+        <file>log/stopcut.png</file>
+        <file>log/title.png</file>
+    </qresource>
+</RCC>

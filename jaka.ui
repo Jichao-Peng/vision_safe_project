@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Jaka</class>
+ <widget class="QDialog" name="Jaka">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1075</width>
+    <height>706</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Jaka</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QLabel" name="Player">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>891</width>
+     <height>671</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);border:1px solid rgb(200, 200, 200);border-radius:10px</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="log.qrc">:/new/log/log/logo.jpg</pixmap>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="OpenButton">
+   <property name="geometry">
+    <rect>
+     <x>950</x>
+     <y>20</y>
+     <width>100</width>
+     <height>90</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{background-color: rgb(255, 255, 255);border:1px solid rgb(200, 200, 200);border-radius:5px}
+QPushButton:hover{background-color: rgb(255, 255, 255);border:1px solid rgb(232, 65, 13);border-radius:5px}QPushButton:pressed{background-color: rgb(255, 255, 255);border:2px solid rgb(232, 65, 13);border-radius:5px}
+QPushButton:released{background-color: rgb(255, 255, 255);border-radius:2px}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="log.qrc">
+     <normaloff>:/new/log/log/open.png</normaloff>:/new/log/log/open.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>40</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="SetupButton">
+   <property name="geometry">
+    <rect>
+     <x>950</x>
+     <y>240</y>
+     <width>100</width>
+     <height>90</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{background-color: rgb(255, 255, 255);border:1px solid rgb(200, 200, 200);border-radius:5px}
+QPushButton:hover{background-color: rgb(255, 255, 255);border:1px solid rgb(232, 65, 13);border-radius:5px}QPushButton:pressed{background-color: rgb(255, 255, 255);border:2px solid rgb(232, 65, 13);border-radius:5px}
+QPushButton:released{background-color: rgb(255, 255, 255);border-radius:2px}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="log.qrc">
+     <normaloff>:/new/log/log/setup.png</normaloff>:/new/log/log/setup.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>45</width>
+     <height>45</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="SetROIButton">
+   <property name="geometry">
+    <rect>
+     <x>950</x>
+     <y>350</y>
+     <width>100</width>
+     <height>90</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{background-color: rgb(255, 255, 255);border:1px solid rgb(200, 200, 200);border-radius:5px}
+QPushButton:hover{background-color: rgb(255, 255, 255);border:1px solid rgb(232, 65, 13);border-radius:5px}QPushButton:pressed{background-color: rgb(255, 255, 255);border:2px solid rgb(232, 65, 13);border-radius:5px}
+QPushButton:released{background-color: rgb(255, 255, 255);border-radius:2px}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="log.qrc">
+     <normaloff>:/new/log/log/deccut.png</normaloff>:/new/log/log/deccut.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>55</width>
+     <height>55</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="StartButton">
+   <property name="geometry">
+    <rect>
+     <x>950</x>
+     <y>570</y>
+     <width>100</width>
+     <height>90</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{background-color: rgb(255, 255, 255);border:1px solid rgb(200, 200, 200);border-radius:5px}
+QPushButton:hover{background-color: rgb(255, 255, 255);border:1px solid rgb(232, 65, 13);border-radius:5px}QPushButton:pressed{background-color: rgb(255, 255, 255);border:2px solid rgb(232, 65, 13);border-radius:5px}
+QPushButton:released{background-color: rgb(255, 255, 255);border-radius:2px}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="log.qrc">
+     <normaloff>:/new/log/log/start.png</normaloff>:/new/log/log/start.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>36</width>
+     <height>36</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ConnectButton">
+   <property name="geometry">
+    <rect>
+     <x>950</x>
+     <y>130</y>
+     <width>100</width>
+     <height>90</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{background-color: rgb(255, 255, 255);border:1px solid rgb(200, 200, 200);border-radius:5px}
+QPushButton:hover{background-color: rgb(255, 255, 255);border:1px solid rgb(232, 65, 13);border-radius:5px}QPushButton:pressed{background-color: rgb(255, 255, 255);border:2px solid rgb(232, 65, 13);border-radius:5px}
+QPushButton:released{background-color: rgb(255, 255, 255);border-radius:2px}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="log.qrc">
+     <normaloff>:/new/log/log/connect.png</normaloff>:/new/log/log/connect.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>40</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="StateLabel">
+   <property name="geometry">
+    <rect>
+     <x>1030</x>
+     <y>670</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);border:1px solid rgb(200, 200, 200);border-radius:5px</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="SetStopROIButton">
+   <property name="geometry">
+    <rect>
+     <x>950</x>
+     <y>460</y>
+     <width>100</width>
+     <height>90</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{background-color: rgb(255, 255, 255);border:1px solid rgb(200, 200, 200);border-radius:5px}
+QPushButton:hover{background-color: rgb(255, 255, 255);border:1px solid rgb(232, 65, 13);border-radius:5px}QPushButton:pressed{background-color: rgb(255, 255, 255);border:2px solid rgb(232, 65, 13);border-radius:5px}
+QPushButton:released{background-color: rgb(255, 255, 255);border-radius:2px}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="log.qrc">
+     <normaloff>:/new/log/log/stopcut.png</normaloff>:/new/log/log/stopcut.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>55</width>
+     <height>55</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="log.qrc"/>
+ </resources>
+ <connections/>
+</ui>
